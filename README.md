@@ -12,10 +12,16 @@ linux/mac:
 
 # how to add countries:
 
-in `src/main.rs`, add a new entry to the `pride_countries` vector, with the following fields:
+in `src/pride_countries.rs`, add a new entry to the `countries_info` vector, with the following fields:
 
 ```rust
-get_country_stats("Country Name", CURRENT_YEAR - /* Year this country started hosting Pride Parades */),
+("Country Name", CURRENT_YEAR - /* Year this country started hosting Pride Parades */),
+```
+
+or (not recommended):
+
+```rust
+("Country Name", /* total number of years this country has hosted pride parades */),
 ```
 
 Make sure that the `Country Name` is the same as the name of the country on Wikipedia, and that the `Year` is the year the country started hosting Pride Parades.

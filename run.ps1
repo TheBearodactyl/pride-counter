@@ -4,7 +4,7 @@ $OUT_DIR = "."
 
 if (Get-Command cargo -ErrorAction SilentlyContinue)
 {
-  cargo run --release
+  cargo run --quiet --release
 } else
 {
   Write-Host "install rust"

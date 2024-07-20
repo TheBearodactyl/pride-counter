@@ -5,7 +5,7 @@ IFS=$'\n\t'
 export OUT_DIR="."
 
 if command -v cargo &>/dev/null; then
-  cargo run --release
+  cargo run --quiet --release
 else
-  echo "please install rust"
+  echo "install rust"
 fi
