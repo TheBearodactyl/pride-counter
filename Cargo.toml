@@ -1,0 +1,12 @@
+[package]
+name = "how-many-prides"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+reqwest = { version = "0.12.5", features = ["blocking"] }
+scraper = "0.19.1"
+
+[build-dependencies]
+chrono = "0.4.38"
